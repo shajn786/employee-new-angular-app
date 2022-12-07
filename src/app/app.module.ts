@@ -9,6 +9,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { SearchEmployeeComponent } from './search-employee/search-employee.component';
 
 const myRoutes: Routes = [{
   path:"",component:AddEmployeeComponent
@@ -16,6 +17,9 @@ const myRoutes: Routes = [{
 ,
 {
   path:"viewall",component:ViewallComponent
+},
+{
+  path:"search",component:SearchEmployeeComponent
 }]
 
 @NgModule({
@@ -23,7 +27,8 @@ const myRoutes: Routes = [{
     AppComponent,
     AddEmployeeComponent,
     ViewallComponent,
-    NavbarComponent
+    NavbarComponent,
+    SearchEmployeeComponent
   ],
   imports: [
     BrowserModule,
